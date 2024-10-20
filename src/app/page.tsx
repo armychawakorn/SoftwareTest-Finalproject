@@ -11,7 +11,7 @@ export type Car = {
 }
 
 export default async function Home() {
-  const cars = await fetch(`https://${process.env.VERCEL_URL}/api/car`, { method: 'GET' }).then(res => res.json()) as Car[];
+  const cars = await fetch(`https://${process.env.NEXT_PUBLIC_API_URL}/api/car`, { method: 'GET' }).then(res => res.json()) as Car[];
 
   return (
     <div className="min-h-screen bg-gray-900 text-white">
