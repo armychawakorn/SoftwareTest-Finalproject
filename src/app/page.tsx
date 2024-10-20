@@ -11,7 +11,7 @@ export type Car = {
 }
 
 export default async function Home() {
-  const cars = await fetch('http://192.168.1.104:3000/api/car', { method: 'GET' }).then(res => res.json()) as Car[];
+  const cars = await fetch('http://localhost:3000/api/car', { method: 'GET' }).then(res => res.json()) as Car[];
 
   return (
     <div className="min-h-screen bg-gray-900 text-white">
