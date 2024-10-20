@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "image": "https://di-uploads-pod20.dealerinspire.com/sewickleybmw/uploads/2022/06/sew-bmw_2023-x1_lineup.jpg",
+        "brand": "BMW",
+        "model": "X1 Series",
+        "year": 2021,
+        "price": 20000
+    },
+    {
+        "id": 2,
+        "image": "https://di-uploads-pod20.dealerinspire.com/sewickleybmw/uploads/2023/11/2311-BMW-X2-Thumb.jpg",
+        "brand": "BMW",
+        "model": "X2 Series",
+        "year": 2021,
+        "price": 25000
+    },
+    {
+        "id": 3,
+        "image": "https://di-uploads-pod20.dealerinspire.com/sewickleybmw/uploads/2024/09/BMW-X3-25-trim.jpg",
+        "brand": "BMW",
+        "model": "X3 Series",
+        "year": 2021,
+        "price": 30000
+    },
+    {
+        "id": 4,
+        "image": "https://di-uploads-pod20.dealerinspire.com/sewickleybmw/uploads/2019/08/sew-bmw_lineup_4.png",
+        "brand": "BMW",
+        "model": "X4 Series",
+        "year": 2021,
+        "price": 35000
+    },
+    {
+        "id": 5,
+        "image": "https://di-uploads-pod20.dealerinspire.com/sewickleybmw/uploads/2023/08/2308-BMW-X5-Thumb.jpg",
+        "brand": "BMW",
+        "model": "X5 Series",
+        "year": 2021,
+        "price": 40000
+    },
+    {
+        "id": 6,
+        "image": "https://di-uploads-pod20.dealerinspire.com/sewickleybmw/uploads/2023/09/X6-Lineup-2309.jpg",
+        "brand": "BMW",
+        "model": "X6 Series",
+        "year": 2021,
+        "price": 45000
+    },
+    {
+        "id": 7,
+        "image": "https://di-uploads-pod20.dealerinspire.com/sewickleybmw/uploads/2022/10/2210-BMW-X7-Lineup.jpg",
+        "brand": "BMW",
+        "model": "X7 Series",
+        "year": 2021,
+        "price": 50000
+    },
+    {
+        "id": 8,
+        "image": "https://di-uploads-pod20.dealerinspire.com/sewickleybmw/uploads/2019/08/sew-bmw_lineup_18.png",
+        "brand": "BMW",
+        "model": "Z4 Series",
+        "year": 2021,
+        "price": 50000
+    }
+]

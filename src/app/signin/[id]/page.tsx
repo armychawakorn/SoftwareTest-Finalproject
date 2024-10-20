@@ -4,7 +4,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import Swal from 'sweetalert2'
 
-export default function Signin() {
+export default function Signin({ params }: { params: { id: string } }) {
     const [email, setEmail] = useState<string | null>(null)
     const [password, setPassword] = useState<string | null>(null)
     async function signinHandler() {
@@ -39,7 +39,11 @@ export default function Signin() {
             })
 
             setTimeout(() => {
-                window.location.href = '/'
+                if (params.id) {
+                    window.location.href = `/cars/${params.id}`
+                }else{
+                    window.location.href = '/'
+                }
             }, 2000);
         } else {
             Swal.fire({

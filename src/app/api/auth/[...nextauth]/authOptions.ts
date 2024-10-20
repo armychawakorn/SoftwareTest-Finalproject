@@ -13,8 +13,8 @@ export const authOptions: AuthOptions = {
         signIn: "/login",
     },
     callbacks: {
-        redirect({ baseUrl }) {
-            return baseUrl;
+        redirect({ url }) {
+            return url;
         },
     },
     providers: [
