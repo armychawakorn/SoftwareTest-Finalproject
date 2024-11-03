@@ -48,10 +48,9 @@ export default function Signup() {
                     title: 'สำเร็จ',
                     text: 'สมัครสมาชิกสำเร็จ',
                     allowOutsideClick: false,
-                })
-                setTimeout(() => {
+                }).then(() => {
                     window.location.href = '/signin'
-                }, 2000);
+                })
             } else {
                 Swal.fire({
                     icon: 'error',
@@ -88,8 +87,8 @@ export default function Signup() {
                                 }} />
                             </div>
                             <div className='grid grid-rows-2'>
-                                <label htmlFor="password" className="text-lg">Confirm Password</label>
-                                <input type="password" id="password" className="bg-[#232428] p-3 rounded-lg w-full focus:outline-none" onChange={(e) => {
+                                <label htmlFor="confirmpassword" className="text-lg">Confirm Password</label>
+                                <input type="password" id="confirmpassword" className="bg-[#232428] p-3 rounded-lg w-full focus:outline-none" onChange={(e) => {
                                     setConfirmPassword(e.target.value)
                                 }} />
                             </div>

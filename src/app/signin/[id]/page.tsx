@@ -49,7 +49,7 @@ export default function Signin({ params }: { params: { id: string } }) {
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
-                text: 'เข้าสู่ระบบไม่สำเร็จ',
+                text: 'เข้าสู่ระบบไม่สำเร็จ โปรดตรวจสอบอีเมลหรือรหัสผ่านของคุณ',
             })
         }
     }
