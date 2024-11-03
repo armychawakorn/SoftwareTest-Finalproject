@@ -13,13 +13,14 @@ export type Car = {
 
 export default async function Home() {
   const cars = await fetch(`https://${process.env.VERCEL_URL}/api/car`, { method: 'GET' }).then((res)=>{
-    console.log(res)
+    console.log(res);
     return res.json()
   }).then((data)=>{
-    console.log(data)
+    console.log(data);
     return data
   }).catch((err)=>{
-    console.log(err)
+    console.log(err);
+    return []
   }) as Car[];
 
   return (
