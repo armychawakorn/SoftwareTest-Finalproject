@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link"
+import Car from "./cars/[id]/page";
 
 export type Car = {
   id: number;
@@ -11,7 +12,10 @@ export type Car = {
 }
 
 export default async function Home() {
-  const cars = await fetch(`https://${process.env.VERCEL_URL}/api/car`, { method: 'GET' }).then(res => res.json()) as Car[];
+  const cars = await fetch(`https://${process.env.VERCEL_URL}/api/car`, { method: 'GET' }).then(res => res.json()).catch(err => {
+    console.error(err);
+    return [];
+  }) as Car[];
 
   return (
     <div className="min-h-screen bg-gray-900 text-white">
